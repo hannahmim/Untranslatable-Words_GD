@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joie de vivre - Detail</title>
+    <link rel="stylesheet" href="detail-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <a href="Français.html" class="back-button">
+            <img src="https://img.icons8.com/m_sharp/50/D63D42/left.png" width="30">
+        </a>
+
+        <h1 class="word-title">Joie de vivre</h1>
+
+        <div class="pronunciation-container">
+            <img src="https://img.icons8.com/m_sharp/50/D63D42/speaker.png" 
+                 class="speaker-icon" 
+                 onclick="playAudio()" 
+                 alt="소리 듣기">
+            <span class="phonetic">[ʒwa də vivʁ]</span>
+        </div>
+
+        <div class="content">
+            <p class="definition">A deep enjoyment of life; <br> an energetic happiness about living.</p>
+            
+            <p class="example">
+                Her laughter and constant curiosity showed a true 
+                <span class="highlight">joie de vivre.</span>
+            </p>
+        </div>
+    </div>
+
+    <audio id="wordAudio" src="joie_voice.m4a"></audio>
+
+    <script>
+        function playAudio() {
+            const audio = document.getElementById('wordAudio');
+            if (audio.src.includes('undefined') || !audio.src) {
+                alert("아직 음성 파일이 준비되지 않았습니다!");
+            } else {
+                audio.play().catch(e => {
+                    console.log("재생 오류:", e);
+                    alert("화면을 한 번 클릭한 뒤 다시 눌러보세요!");
+                });
+            }
+        }
+    </script>
+</body>
+</html>
