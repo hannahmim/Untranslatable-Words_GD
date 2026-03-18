@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joie de vivre - Detail</title>
+    <link rel="stylesheet" href="detail-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <a href="Français.html" class="back-button">
+            <img src="https://img.icons8.com/m_sharp/50/D63D42/left.png" width="30">
+        </a>
+
+        <h1 class="word-title">Joie de vivre</h1>
+
+        <div class="pronunciation-container">
+            <img src="https://img.icons8.com/m_sharp/50/D63D42/speaker.png" 
+                 class="speaker-icon" 
+                 onclick="playAudio()" 
+                 alt="소리 듣기">
+            <span class="phonetic">[ʒwa də vivʁ]</span>
+        </div>
+
+        <div class="content">
+            <p class="definition">A deep enjoyment of life; <br> an energetic happiness about living.</p>
+            
+            <p class="example">
+                Her laughter and constant curiosity showed a true 
+                <span class="highlight">joie de vivre.</span>
+            </p>
+        </div>
+    </div>
+
+    <audio id="wordAudio" src="joie_voice.m4a"></audio>
+
+    <script>
+        function playAudio() {
+            const audio = document.getElementById('wordAudio');
+            // 파일이 아직 없을 때를 대비한 처리
+            if (audio.readyState === 0) { 
+                alert("음성 녹음 준비 중입니다! 디자인 먼저 구경해 주세요 😊");
+            } else {
+                audio.play();
+            }
+        }
+    </script>
+</body>
+</html>
