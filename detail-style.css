@@ -1,0 +1,106 @@
+/* 1. 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. 상단 헤더 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 50px;
+    z-index: 10;
+}
+
+.back-btn {
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+.back-btn:hover { opacity: 0.6; }
+
+/* 3. 메인 컨테이너 (정중앙 배치) */
+.detail-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+/* 4. 컨텐츠 박스 (내용물 덩어리) */
+.content-box {
+    display: inline-block;
+    max-width: 700px; /* 너비 제한을 더 줄여서 정갈하게 */
+}
+
+/* 5. 메인 단어 (축소) */
+.detail-word {
+    font-size: 4.5rem; /* 기존 6.5rem -> 4.5rem */
+    font-weight: 900;
+    color: #2D4AB7;
+    margin-bottom: 25px; 
+    line-height: 1;
+}
+
+/* 6. 발음 기호 그룹 (축소) */
+.pronunciation-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px; 
+}
+
+.audio-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.phonetic-script {
+    font-size: 1.3rem; /* 기존 1.8rem -> 1.3rem */
+    color: #2D4AB7;
+    font-weight: 400;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.pronunciation-group:hover .phonetic-script {
+    opacity: 1;
+}
+
+/* 7. 단어 의미 (축소) */
+.word-definition {
+    font-size: 1.4rem; /* 기존 2.2rem -> 1.4rem */
+    color: #2D4AB7;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+/* 8. 예문 섹션 (축소) */
+.example-text {
+    font-size: 1.2rem; /* 기존 1.8rem -> 1.2rem */
+    color: #D63D42;
+    line-height: 1.6;
+}
+
+.example-text .highlight {
+    font-weight: 900;
+    color: #2D4AB7;
+}

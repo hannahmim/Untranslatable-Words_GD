@@ -1,0 +1,92 @@
+/* 1. 기본 초기화 및 폰트 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif; /* 전체 폰트 적용 */
+}
+
+/* 2. 전체 레이아웃 설정 */
+body {
+    background-color: #FFFFFF; /* 흰색 배경 */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 전체 콘텐츠를 시각적으로 살짝 위로 올리기 위한 여백 */
+    padding-bottom: 15vh; 
+    position: relative; /* 배경 글자 배치를 위해 필수 */
+    overflow: hidden;    /* 배경 글자가 화면 밖으로 넘치지 않게 */
+}
+
+/* 3. ✨ 배경 희미한 글자 레이어 (보내주신 디자인 반영) */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    padding: 40px; /* 화면 가장자리 여백 */
+    pointer-events: none;
+    opacity: 0.14; 
+    color: #D63D42;
+    
+    /* ✨ 글자 정렬 핵심 설정 */
+    font-size: 1rem;
+    line-height: 1.8;         /* 줄 간격 (시안처럼 넉넉하게) */
+    letter-spacing: 0.5rem;    /* 글자 사이 가로 간격 */
+    word-break: break-all;     /* 단어 단위가 아닌 글자 단위로 끊기 */
+    
+    text-align: justify;       /* 전체 줄 양쪽 맞춤 */
+    text-align-last: left;     /* 마지막 줄만 왼쪽 정렬 */
+}
+
+/* 4. 메인 콘텐츠 컨테이너 */
+.container {
+    position: relative;
+    z-index: 10; /* 배경보다 무조건 위로 오게 설정 */
+    text-align: center;
+}
+
+/* 5. 메인 제목 스타일 */
+.main-title {
+    font-size: 5.5rem; /* 제목 크기 */
+    color: #D63D42;    /* 시안의 레드 컬러 */
+    font-weight: 600;  /* 수정하신 600 두께 유지 */
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+}
+
+/* 6. 버튼 그룹 레이아웃 */
+.button-group {
+    display: flex;
+    gap: 15px; /* 버튼 사이 간격 */
+    justify-content: center;
+}
+
+/* 7. 버튼 기본 스타일 (수정하신 값 그대로 보존) */
+.nav-btn {
+    display: inline-block;
+    background-color: white; /* 배경 글자가 버튼 뒤에 비치지 않게 설정 */
+    
+    /* 글자를 테두리에 맞춰 아래로 내리기 위한 비대칭 패딩 */
+    padding: 12px 35px 8px 35px; 
+    
+    font-size: 1.2rem;
+    color: #2D4AB7; /* 버튼 글자 파란색 */
+    text-decoration: none;
+    border: 2px solid #D63D42; /* 레드 테두리 */
+    border-radius: 15px; /* 시안의 둥근 직사각형 느낌 */
+    transition: all 0.3s ease;
+    font-weight: 600; /* 수정하신 600 두께 유지 */
+}
+
+/* 8. 마우스 호버 효과 (색상 반전 및 살짝 상승) */
+.nav-btn:hover {
+    background-color: #D63D42;
+    color: #FFFFFF;
+    transform: translateY(-3px); /* 위로 살짝 올라가는 효과 */
+}
