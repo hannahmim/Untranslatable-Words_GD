@@ -6,13 +6,12 @@
 }
 
 body {
-    background-color: #FFFFFF; /* 깨끗한 흰색 배경 */
+    background-color: #FFFFFF; 
     height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
-/* 헤더 설정 (단어를 가려줌) */
 .header {
     position: fixed;
     top: 0; left: 0; width: 100%;
@@ -35,7 +34,6 @@ body {
     color: #2D4AB7;
 }
 
-/* 휠 스크롤 영역 */
 .wheel-container {
     position: relative;
     z-index: 10;
@@ -55,12 +53,11 @@ body {
     padding-bottom: 60vh; 
 }
 
-/* 단어 스타일 */
 .word-item {
     font-size: 3rem;
     color: rgba(45, 74, 183, 0.15);
     text-decoration: none;
-    margin: 55px 0; /* 한글은 자형이 꽉 차 있어서 간격을 조금 더 줌 */
+    margin: 55px 0; 
     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
                 color 0.4s ease, 
                 border-color 0.4s ease;
@@ -74,7 +71,7 @@ body {
     transform: scale(1); 
 }
 
-/* 활성 상태 */
+
 .word-item.active {
     color: #2D4AB7;
     font-weight: 900;
@@ -83,7 +80,6 @@ body {
     cursor: pointer;
 }
 
-/* 활성 단어 호버 색상 */
 .word-item.active:hover {
     color: #D63D42;
 }

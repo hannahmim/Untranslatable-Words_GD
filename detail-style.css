@@ -1,4 +1,3 @@
-/* 1. 기본 설정 */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@ body {
     flex-direction: column;
 }
 
-/* 2. 상단 헤더 */
 .header {
     position: fixed;
     top: 0;
@@ -31,7 +29,7 @@ body {
 }
 .back-btn:hover { opacity: 0.6; }
 
-/* 3. 메인 컨테이너 (정중앙 배치) */
+
 .detail-container {
     flex: 1;
     display: flex;
@@ -41,22 +39,21 @@ body {
     text-align: left;
 }
 
-/* 4. 컨텐츠 박스 (내용물 덩어리) */
+
 .content-box {
     display: inline-block;
-    max-width: 700px; /* 너비 제한을 더 줄여서 정갈하게 */
+    max-width: 700px; 
 }
 
-/* 5. 메인 단어 (축소) */
+
 .detail-word {
-    font-size: 4.5rem; /* 기존 6.5rem -> 4.5rem */
+    font-size: 4.5rem; 
     font-weight: 900;
     color: #2D4AB7;
     margin-bottom: 25px; 
     line-height: 1;
 }
 
-/* 6. 발음 기호 그룹 (축소) */
 .pronunciation-group {
     display: flex;
     align-items: center;
@@ -73,7 +70,7 @@ body {
 }
 
 .phonetic-script {
-    font-size: 1.3rem; /* 기존 1.8rem -> 1.3rem */
+    font-size: 1.3rem;
     color: #2D4AB7;
     font-weight: 400;
     opacity: 0.3;
@@ -84,18 +81,17 @@ body {
     opacity: 1;
 }
 
-/* 7. 단어 의미 (축소) */
 .word-definition {
-    font-size: 1.4rem; /* 기존 2.2rem -> 1.4rem */
+    font-size: 1.4rem; 
     color: #2D4AB7;
     line-height: 1.5;
     margin-bottom: 50px;
     font-weight: 400;
 }
 
-/* 8. 예문 섹션 (축소) */
+
 .example-text {
-    font-size: 1.2rem; /* 기존 1.8rem -> 1.2rem */
+    font-size: 1.2rem; 
     color: #D63D42;
     line-height: 1.6;
 }
