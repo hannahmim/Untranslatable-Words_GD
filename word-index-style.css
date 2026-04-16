@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.13; 
+    color: #ff2d42c2;
+
+    font-size: 45rem;    
+    letter-spacing: -7rem;      
+    line-height: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.back-home {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+.index-container {
+    display: flex;
+    gap: 60px;
+    max-width: 1200px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.column-title {
+    color: #2847E0;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+.btn-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.word-card {
+    height: 60px;
+    border: 1px solid #2D4AB7;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #2D4AB7;
+    font-weight: 800;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+
+.word-card:hover {
+    background-color: #efefff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #2847E0;
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0.8.5;
+    z-index: 20;
+}

@@ -48,7 +48,7 @@ body {
 
 .main-title {
     font-size: 5.5rem;
-    color: #D63D42;    
+    color: #E00005;  
     font-weight: 600;  
     margin-bottom: 30px;
     letter-spacing: -2px;
@@ -65,19 +65,19 @@ body {
     display: inline-block;
     background-color: white;
     
-    padding: 12px 35px 8px 35px; 
+    padding: 10px 30px 8px 30px; 
     
     font-size: 1.2rem;
-    color: #2D4AB7;
+    color: #2847E0;
     text-decoration: none;
-    border: 2px solid #D63D42; 
-    border-radius: 15px;
+    border: 2px solid #FF2620; 
+    border-radius: 7px;
     transition: all 0.3s ease;
     font-weight: 600; 
 }
 
 .nav-btn:hover {
-    background-color: #D63D42;
+    background-color: #FF2D43;
     color: #FFFFFF;
     transform: translateY(-3px);
 }
